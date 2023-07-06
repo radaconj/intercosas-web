@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <div class="text-center text-justify">
+        <h1>{{post.title}}</h1>
+        <h3 class="my-2 h5  text-light">{{post.date|date:'F jS Y'}}</h3>
+        <img src="{{post.img.url}}" alt="{{post.title}}">
+        <div class="my-4">
+            <p>{{post.description|safe}}</p>
+        </div>
+    </div>
+
+
+{% endblock %}
